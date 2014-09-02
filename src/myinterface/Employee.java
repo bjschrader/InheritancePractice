@@ -1,14 +1,14 @@
 package myinterface;
-import my.concrete.Employee;
-import my.concrete.HourlyEmployee;
-import my.concrete.SalariedEmployee;
-import my.concrete.SalaryPlusCommissionEmployee;
+//import my.concrete.Employee;
+//import my.concrete.HourlyEmployee;
+//import my.concrete.SalariedEmployee;
+//import my.concrete.SalaryPlusCommissionEmployee;
 
 /**
  *
  * @author schra_000
  */
-public interface Employee2 {
+public interface Employee {
     public abstract void work();
     
     public abstract int getWage();
