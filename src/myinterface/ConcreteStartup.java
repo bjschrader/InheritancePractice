@@ -1,4 +1,5 @@
-package my.concrete;
+package myinterface;
+import my.concrete.*;
 import my.concrete.Employee;
 import my.concrete.HourlyEmployee;
 import my.concrete.SalariedEmployee;
