@@ -6,9 +6,10 @@ package my.concrete;
  */
 public class Employee {
 
-    private double wage;
     private int empNum;
-    private String empName;
+    private String empName, firstName, lastName;
+
+    
 
     public Employee() {
 
@@ -17,13 +18,23 @@ public class Employee {
     public Employee(int empNum, String empName) {
 
     }
-
-    public double getWage() {
-        return wage;
+public String getFirstName() {
+        return firstName;
     }
 
-    public void setWage(double wage) {
-        this.wage = wage;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public double getWage() {
+        return 0; //return 0 because this method is not to be used
     }
 
     public int getEmpNum() {

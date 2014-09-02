@@ -1,8 +1,5 @@
 package myinterface;
-//import my.concrete.Employee;
-//import my.concrete.HourlyEmployee;
-//import my.concrete.SalariedEmployee;
-//import my.concrete.SalaryPlusCommissionEmployee;
+
 
 /**
  *

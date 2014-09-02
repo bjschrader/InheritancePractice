@@ -10,6 +10,6 @@ package myinterface;
  *
  * @author schra_000
  */
-public class SalaryPlusCommission extends SalariedEmployee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
 }
