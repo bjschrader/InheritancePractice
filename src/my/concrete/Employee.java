@@ -5,16 +5,25 @@ package my.concrete;
  * @author schra_000
  */
 public class Employee {
-    
-    
+
+    private double wage;
     private int empNum;
     private String empName;
-    
-    public Employee(){
-    
+
+    public Employee() {
+
     }
-    public Employee(int empNum, String empName){
-        
+
+    public Employee(int empNum, String empName) {
+
+    }
+
+    public double getWage() {
+        return wage;
+    }
+
+    public void setWage(double wage) {
+        this.wage = wage;
     }
 
     public int getEmpNum() {
@@ -32,5 +41,5 @@ public class Employee {
     public void setEmpName(String empName) {
         this.empName = empName;
     }
-    
+
 }
