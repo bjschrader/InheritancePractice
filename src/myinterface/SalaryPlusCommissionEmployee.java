@@ -10,7 +10,6 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private double totalPay;
     private String lastName;
     private int empNum;
-    private String empName;
     private String firstName;
     
     //@Override
@@ -65,15 +64,5 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
         //return empNum;
     }
 
-    @Override
-    public String getEmpName() {
-        return empName;
-    }
-
-    @Override
-    public void setEmpName(String empName) {
-        //return empName;
-    }
-    
     
 }

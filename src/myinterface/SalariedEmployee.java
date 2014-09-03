@@ -5,23 +5,23 @@ package myinterface;
  */
 public class SalariedEmployee implements Employee {
     
-    private double salary;
-    private String empName;
+    private double weeklySalary;
+    //private String empName; //redundant
     private int empNum;
     private String lastName;
     private String firstName;
 
-    public double getSalary() {
-        return salary;
+    public double getWeeklySalary() {
+        return weeklySalary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setWeeklySalary(double weeklySalary) {
+        this.weeklySalary = weeklySalary;
     }
     
 //    @Override
 //    public double getWage() {
-//        return salary;
+//        return weeklySalary;
 //    }
 
     @Override
@@ -54,15 +54,7 @@ public class SalariedEmployee implements Employee {
         //return empNum;
     }
 
-    @Override
-    public String getEmpName() {
-        return empName;
-    }
 
-    @Override
-    public void setEmpName(String empName) {
-        //return empName;
-    }
     
     
     

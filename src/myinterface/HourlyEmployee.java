@@ -68,14 +68,5 @@ public class HourlyEmployee implements Employee {
         //return empNum;
     }
 
-    @Override
-    public String getEmpName() {
-        return empName;
-    }
-
-    @Override
-    public void setEmpName(String empName) {
-        //return empName;
-    }
-
+    
 }

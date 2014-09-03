@@ -6,7 +6,7 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
     
-    private double salary;
+    double salary;
 
     public double getSalary() {
         return salary;
@@ -17,7 +17,7 @@ public class SalariedEmployee extends Employee {
     }
     
 //    @Override
-    public double totalPay() {
+    public double getTotalPay() {
         return salary;
     }
     

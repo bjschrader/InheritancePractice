@@ -5,12 +5,13 @@ package my.concrete;
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
-    private double commission;
-    private double salary;
+      private double commission;
+//    private double salary;
+//    private double totalPay;
     private double totalPay;
     
-//    @Override
-    public double totalPay (){
+    //@Override
+    public double totalPay (double totalPay){
         if (commission > 0) {
             totalPay = salary + commission;
         }return totalPay;

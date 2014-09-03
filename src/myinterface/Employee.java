@@ -21,8 +21,6 @@ public interface Employee {
 
     public abstract void setEmpNum(int empNum);
 
-    public abstract String getEmpName();
-
-    public abstract void setEmpName(String empName);
+    
 
 }
