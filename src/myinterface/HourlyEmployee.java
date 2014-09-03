@@ -8,7 +8,7 @@ public class HourlyEmployee implements Employee {
 
     private double wage;
     private int hoursWorked;
-    private final static double OVERTIME = 1.5;
+    private final static double OVER_TIME = 1.5;
     private String lastName;
     private int empNum;
     private String empName;
@@ -18,7 +18,7 @@ public class HourlyEmployee implements Employee {
     public double getWage() {
         double wagesEarned = 0;
         if (hoursWorked > 40) {
-            wagesEarned = ((hoursWorked - 40) * OVERTIME);
+            wagesEarned = ((hoursWorked - 40) * OVER_TIME);
         } else {
             wagesEarned = hoursWorked * wage;
         }
