@@ -42,7 +42,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
 
     @Override
     public void setFirstName(String firstName) {
-        //return firstName;
+        this.firstName = firstName;
     }
 
     @Override
