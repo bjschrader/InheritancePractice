@@ -1,14 +1,14 @@
 package myinterface;
-import my.concrete.*;
-import my.concrete.Employee;
-import my.concrete.HourlyEmployee;
-import my.concrete.SalariedEmployee;
-import my.concrete.SalaryPlusCommissionEmployee;
+
+import myinterface.Employee;
+import myinterface.HourlyEmployee;
+import myinterface.SalariedEmployee;
+import myinterface.SalaryPlusCommissionEmployee;
 /**
  *
  * @author schra_000
  */
-public class ConcreteStartup {
+public class InterfaceStartup {
     private static double wage;
     public static void main(String[] args) {
         HourlyEmployee empC1 = new HourlyEmployee();

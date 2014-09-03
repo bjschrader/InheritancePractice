@@ -1,14 +1,14 @@
 package myabstract;
-import my.concrete.*;
-import my.concrete.Employee;
-import my.concrete.HourlyEmployee;
-import my.concrete.SalariedEmployee;
-import my.concrete.SalaryPlusCommissionEmployee;
+
+import myabstract.Employee;
+import myabstract.HourlyEmployee;
+import myabstract.SalariedEmployee;
+import myabstract.SalaryPlusCommissionEmployee;
 /**
  *
  * @author schra_000
  */
-public class ConcreteStartup {
+public class AbstractStartup {
     private static double wage;
     public static void main(String[] args) {
         HourlyEmployee empC1 = new HourlyEmployee();
