@@ -10,8 +10,8 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private double salary;
     private double totalPay;
     
-    @Override
-    public double getWage (){
+//    @Override
+    public double totalPay (){
         if (commission > 0) {
             totalPay = salary + commission;
         }return totalPay;

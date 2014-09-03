@@ -9,8 +9,6 @@ public class Employee {
     private int empNum;
     private String empName, firstName, lastName;
 
-    
-
     public Employee() {
 
     }
@@ -18,7 +16,8 @@ public class Employee {
     public Employee(int empNum, String empName) {
 
     }
-public String getFirstName() {
+
+    public String getFirstName() {
         return firstName;
     }
 
@@ -33,9 +32,10 @@ public String getFirstName() {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public double getWage() {
-        return 0; //return 0 because this method is not to be used
-    }
+
+//    public double getWage() {
+//        return 0; //return 0 because this method is not to be used
+//    }
 
     public int getEmpNum() {
         return empNum;

@@ -16,10 +16,10 @@ public class SalariedEmployee extends Employee {
         this.salary = salary;
     }
     
-    @Override
-    public double getWage() {
-        return salary;
-    }
+//    @Override
+//    public double getWage() {
+//        return salary;
+//    }
     
     
     
