@@ -13,8 +13,8 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private String empName;
     private String firstName;
     
-    @Override
-    public double getWage (){
+    //@Override
+    public double totalPay (){
         if (commission > 0) {
             totalPay = salary + commission;
         }return totalPay;

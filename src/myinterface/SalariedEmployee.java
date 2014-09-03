@@ -19,10 +19,10 @@ public class SalariedEmployee implements Employee {
         this.salary = salary;
     }
     
-    @Override
-    public double getWage() {
-        return salary;
-    }
+//    @Override
+//    public double getWage() {
+//        return salary;
+//    }
 
     @Override
     public String getFirstName() {

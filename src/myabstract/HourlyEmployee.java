@@ -9,18 +9,18 @@ public class HourlyEmployee extends Employee {
     private double wage;
     private int hoursWorked;
     private final static double OVER_TIME = 1.5;
-
+    private double totalPay;
     
     
-    @Override
-    public double getWage() {
-        double wagesEarned = 0;
+    //@Override
+    public double getTotalPay() {
+        totalPay = 0;
         if (hoursWorked > 40) {
-            wagesEarned = ((hoursWorked - 40) * OVER_TIME);
+            totalPay = ((hoursWorked - 40) * (OVER_TIME * wage)) + (wage * 40);
         } else {
-            wagesEarned = hoursWorked * wage;
+            totalPay = hoursWorked * wage;
         }
-        return wagesEarned;
+        return totalPay;
     }
 
     public void setWage(double wage) {

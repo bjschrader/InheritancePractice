@@ -33,7 +33,7 @@ public abstract class Employee {
         this.lastName = lastName;
     }
 
-    public abstract double getWage();
+    //public abstract double getWage();
 
     public int getEmpNum() {
         return empNum;

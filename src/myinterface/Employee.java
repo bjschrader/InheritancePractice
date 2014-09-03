@@ -15,7 +15,7 @@ public interface Employee {
 
     public abstract void setLastName(String lastName);
 
-    public abstract double getWage();
+    //public abstract double getWage();
 
     public abstract int getEmpNum();
 

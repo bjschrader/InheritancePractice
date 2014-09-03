@@ -17,9 +17,9 @@ public class SalariedEmployee extends Employee {
     }
     
 //    @Override
-//    public double getWage() {
-//        return salary;
-//    }
+    public double totalPay() {
+        return salary;
+    }
     
     
     

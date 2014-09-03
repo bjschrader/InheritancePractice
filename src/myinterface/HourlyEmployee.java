@@ -13,16 +13,17 @@ public class HourlyEmployee implements Employee {
     private int empNum;
     private String empName;
     private String firstName;
+    private double totalPay;
 
-    @Override
-    public double getWage() {
-        double wagesEarned = 0;
+    //@Override
+    public double getTotalPay() {
+        totalPay = 0;
         if (hoursWorked > 40) {
-            wagesEarned = ((hoursWorked - 40) * OVER_TIME);
+            totalPay = ((hoursWorked - 40) * (OVER_TIME * wage)) + (wage * 40);
         } else {
-            wagesEarned = hoursWorked * wage;
+            totalPay = hoursWorked * wage;
         }
-        return wagesEarned;
+        return totalPay;
     }
 
     public void setWage(double wage) {

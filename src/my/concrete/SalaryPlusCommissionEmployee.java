@@ -1,5 +1,4 @@
 package my.concrete;
-
 /**
  *
  * @author schra_000
