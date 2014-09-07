@@ -16,7 +16,7 @@ public class SalariedEmployee extends Employee {
         this.salary = salary;
     }
     
-//    @Override
+    //@Override
     public double getTotalPay() {
         return salary;
     }
