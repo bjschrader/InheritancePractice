@@ -6,19 +6,21 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
     
-    double salary;
+    
 
-    public double getSalary() {
-        return salary;
+    double weeklySalary;
+    
+    public double getWeeklySalary() {
+        return weeklySalary;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setWeeklySalary(double weeklySalary) {
+        this.weeklySalary = weeklySalary;
     }
     
-    //@Override
+    
     public double getTotalPay() {
-        return salary;
+        return weeklySalary;
     }
     
     

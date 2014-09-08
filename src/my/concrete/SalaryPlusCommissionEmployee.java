@@ -6,15 +6,20 @@ package my.concrete;
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
       private double commission;
-//    private double salary;
-//    private double totalPay;
-    private double totalPay;
+      private double totalWeeklyPay;
+
+   
     
-    //@Override
-    public double totalPay (double totalPay){
+    public double totalWeeklyPay (double totalWeeklyPay){
         if (commission > 0) {
-            totalPay = salary + commission;
-        }return totalPay;
+            totalWeeklyPay = weeklySalary + commission;
+        }return totalWeeklyPay;
+    }public double getTotalWeeklyPay() {
+        return totalWeeklyPay;
+    }
+
+    public void setTotalWeeklyPay(double totalWeeklyPay) {
+        this.totalWeeklyPay = totalWeeklyPay;
     }
 
     public double getCommission() {
@@ -25,13 +30,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
         this.commission = commission;
     }
 
-    public double getTotalPay() {
-        return totalPay;
-    }
-
-    public void setTotalPay(double totalPay) {
-        this.totalPay = totalPay;
-    }
+   
     
     
     

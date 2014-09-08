@@ -15,12 +15,11 @@ public class ConcreteStartup {
         int hoursWorked = 60;
         
         HourlyEmployee empC1 = new HourlyEmployee();
-        empC1.setWage(wage);
-        empC1.setHoursWorked(hoursWorked);
+        empC1.setHourlyWage(wage);
+        empC1.setHoursWorkedPerWeek(hoursWorked);
         
-        System.out.println("Total pay is: " + empC1.getTotalPay());
+        System.out.println("Total pay for the week is: $" + empC1.getTotalWeeklyPay());
          
-        
-        //System.out.println("test");
+       
     }
 }

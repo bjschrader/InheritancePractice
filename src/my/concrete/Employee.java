@@ -7,13 +7,15 @@ package my.concrete;
 public class Employee {
 
     private int empNum;
-    private String empName, firstName, lastName;
+    private String firstName, lastName;
+    
+
 
     public Employee() {
 
     }
 
-    public Employee(int empNum, String empName) {
+    public Employee(int empNum, String firstName, String lastName) {
 
     }
 
@@ -32,11 +34,7 @@ public class Employee {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-//    public double getWage() {
-//        return 0; //return 0 because this method is not to be used
-//    }
-
+    
     public int getEmpNum() {
         return empNum;
     }
@@ -45,12 +43,6 @@ public class Employee {
         this.empNum = empNum;
     }
 
-    public String getEmpName() {
-        return empName;
-    }
-
-    public void setEmpName(String empName) {
-        this.empName = empName;
-    }
+    
 
 }

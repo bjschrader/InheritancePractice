@@ -6,40 +6,36 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
 
-    private double wage;
-    private int hoursWorked;
-    private final static double OVER_TIME = 1.5;
-    private double totalPay;
+    private double hourlyWage;
+    private int hoursWorkedPerWeek;
+    private final static double OVER_TIME_PAY = 1.5;
+    private double totalWeeklyPay;
 
-    //@Override
-    public double getTotalPay() {
-        totalPay = 0;
-        if (hoursWorked > 40) {
-            totalPay = ((hoursWorked - 40) * (OVER_TIME * wage)) + (wage * 40);
+    
+    public double getTotalWeeklyPay() {
+        totalWeeklyPay = 0;
+        if (hoursWorkedPerWeek > 40) {
+            totalWeeklyPay = ((hoursWorkedPerWeek - 40) * (OVER_TIME_PAY * hourlyWage)) + (hourlyWage * 40);
         } else {
-            totalPay = hoursWorked * wage;
+            totalWeeklyPay = hoursWorkedPerWeek * hourlyWage;
         }
-        return totalPay;
+        return totalWeeklyPay;
     }
 
-    public double getWage() {
-        return wage;
+    public double getHourlyWage() {
+        return hourlyWage;
     }
 
-//    public void setTotalPay(double totalPay) {
-//        this.totalPay = totalPay;
-//    }
-
-    public void setWage(double wage) {
-        this.wage = wage;
+    public void setHourlyWage(double hourlyWage) {
+        this.hourlyWage = hourlyWage;
     }
 
-    public int getHoursWorked() {
-        return hoursWorked;
+    public int getHoursWorkedPerWeek() {
+        return hoursWorkedPerWeek;
     }
 
-    public void setHoursWorked(int hoursWorked) {
-        this.hoursWorked = hoursWorked;
+    public void setHoursWorkedPerWeek(int hoursWorkedPerWeek) {
+        this.hoursWorkedPerWeek = hoursWorkedPerWeek;
     }
 
 }
